@@ -1,0 +1,469 @@
+/* 
+Colours 
+*/
+:root {
+    --ea-app-primary-colour-blue: #2696F7;
+    --ea-app-primary-colour-black: #000000;
+    --ea-app-primary-colour-lGrey: #FCFCFC;
+    --ea-app-primary-colour-white: #FFFFFF;
+    --ea-app-secondary-colour-red: #BA3030;
+    --ea-app-secondary-colour-dGrey: #333333;
+    --ea-app-btn-min-width: 195px;
+    --ea-app-form-min-width: 300px;
+}
+
+/* 
+easy colouring  
+*/
+
+.ea-App-Blue {
+    color: var(--ea-app-primary-colour-blue)!important;
+}
+
+.ea-App-Black {
+    color: var(--ea-app-primary-colour-black)!important;
+}
+
+.ea-App-lGrey {
+    color: var(--ea-app-primary-colour-lGrey)!important;
+}
+
+.ea-App-White {
+    color: var(--ea-app-primary-colour-white)!important;
+}
+
+.ea-App-Red {
+    color: var(--ea-app-secondary-colour-red)!important;
+}
+
+.ea-App-dGrey {
+    color: var(--ea-app-secondary-colour-dGrey)!important;
+}
+
+/* 
+easy bg colouring 
+*/
+
+.ea-App-Blue-BG {
+    background-color: var(--ea-app-primary-colour-blue)!important;
+}
+
+.ea-App-Black-BG {
+    background-color: var(--ea-app-primary-colour-black)!important;
+}
+
+.ea-App-lGrey-BG {
+    background-color: var(--ea-app-primary-colour-lGrey)!important;
+}
+
+.ea-App-White-BG {
+    background-color: var(--ea-app-primary-colour-white)!important;
+}
+
+.ea-App-Red-BG {
+    background-color: var(--ea-app-secondary-colour-red)!important;
+}
+
+.ea-App-dGrey-BG {
+    background-color: var(--ea-app-secondary-colour-dGrey)!important;
+}
+
+/* 
+Fonts  
+*/
+
+/* regular */
+@font-face {
+    font-family: Graphik;
+    src: url("./fonts/Graphik-Regular.ttf") format("ttf");
+    font-weight: normal;
+}    
+/* bold */
+@font-face {
+    font-family: Graphik;
+    src: url("./fonts/Graphik-Bold.ttf") format("ttf");
+    font-weight: bold;
+}
+/* light */
+@font-face {
+    font-family: Graphik Light;
+    src: url("./fonts/Graphik-Light.ttf") format("ttf");
+}
+/* extra light */
+@font-face {
+    font-family: Graphik ExtraLight;
+    src: url("./fonts/Graphik-Extralight.ttf") format("ttf");
+}
+/* thin */
+@font-face {
+    font-family: Graphik Thin;
+    src: url("./fonts/Graphik-Thin.ttf") format("ttf");
+}
+
+/*
+Text
+*/
+
+.ea-HeroTitle {
+    font-family: Graphik;
+    font-size: 60px;
+    color: var(--ea-app-primary-colour-blue);
+    font-weight: bold;
+}
+
+.ea-H1 {
+    font-family: Graphik;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.ea-H2 {
+    font-family: Graphik;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.ea-BodyText {
+    font-family: Graphik;
+    font-size: 18px;
+    color: var(--ea-app-primary-colour-black);
+    font-weight: normal;
+}
+
+/*
+button and link styles - hover effects 
+*/
+
+.ea-Link {
+    font-family: Graphik;
+    font-size:18px;
+    color: var(--ea-app-primary-colour-blue);
+    font-weight: bold;
+    text-decoration: none;
+    opacity: 0.85;
+    transition: opacity .3s ease-in;
+    -moz-transition: opacity .3s ease-in;
+    -webkit-transition: opacity .3s ease-in;
+    -o-transition: opacity .3s ease-in;
+}
+
+.ea-Link:hover {
+    opacity: 1;
+}
+
+
+/* 
+buttons 
+*/
+
+.ea-Btn-Positive-Primary {
+    padding: 13px 19px;
+    font-family: Graphik;
+    font-size: 15px;
+    color: var(--ea-app-primary-colour-white);
+    background-color: var(--ea-app-primary-colour-blue);
+    font-weight: bold;
+    border: 1px solid var(--ea-app-primary-colour-blue);
+    border-radius: 5px;
+    min-width: var(--ea-app-btn-min-width);
+    opacity: 0.85;
+    transition: opacity .3s ease-in;
+    -moz-transition: opacity .3s ease-in;
+    -webkit-transition: opacity .3s ease-in;
+    -o-transition: opacity .3s ease-in;
+}
+
+.ea-App-Btn-Positive-Primary:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.ea-Btn-Negative-Primary {
+    padding: 13px 19px;
+    font-family: Graphik;
+    font-size: 15px;
+    color: var(--ea-app-primary-colour-white);
+    background-color: var(--ea-app-secondary-colour-red);
+    font-weight: bold;
+    border: 1px solid var(--ea-app-secondary-colour-red);
+    border-radius: 5px;
+    min-width: var(--ea-app-btn-min-width);
+    opacity: 0.85;
+    transition: opacity .3s ease-in;
+    -moz-transition: opacity .3s ease-in;
+    -webkit-transition: opacity .3s ease-in;
+    -o-transition: opacity .3s ease-in;
+}
+
+.ea-Btn-Negative-Primary:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.ea-Btn-Black-White {
+    padding: 13px 19px;
+    font-family: Graphik;
+    font-size: 15px;
+    color: var(--ea-app-primary-colour-black);
+    background-color: var(--ea-app-primary-colour-white);
+    font-weight: bold;
+    border: 2px solid var(--ea-app-primary-colour-black);
+    border-radius: 5px;
+    min-width: var(--ea-app-btn-min-width);
+    opacity: 0.85;
+    transition: opacity .3s ease-in;
+    -moz-transition: opacity .3s ease-in;
+    -webkit-transition: opacity .3s ease-in;
+    -o-transition: opacity .3s ease-in;
+}
+
+.ea-Btn-Black-White:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.ea-Btn-Positive-Secondary {
+    padding: 13px 19px;
+    font-family: Graphik;
+    font-size: 15px;
+    color: var(--ea-app-primary-colour-blue);
+    background-color: var(--ea-app-primary-colour-white);
+    font-weight: bold;
+    border: 2px solid var(--ea-app-primary-colour-blue);
+    border-radius: 5px;
+    min-width: var(--ea-app-btn-min-width);
+    opacity: 0.85;
+    transition: opacity .3s ease-in;
+    -moz-transition: opacity .3s ease-in;
+    -webkit-transition: opacity .3s ease-in;
+    -o-transition: opacity .3s ease-in;
+}
+
+.ea-Btn-Positive-Secondary:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.ea-Btn-Negative-Secondary {
+    padding: 13px 19px;
+    font-family: Graphik;
+    font-size: 15px;
+    color: var(--ea-app-secondary-colour-red);
+    background-color: var(--ea-app-primary-colour-white);
+    font-weight: bold;
+    border: 2px solid var(--ea-app-secondary-colour-red);
+    border-radius: 5px;
+    min-width: var(--ea-app-btn-min-width);
+    opacity: 0.85;
+    transition: opacity .3s ease-in;
+    -moz-transition: opacity .3s ease-in;
+    -webkit-transition: opacity .3s ease-in;
+    -o-transition: opacity .3s ease-in;
+}
+
+.ea-Btn-Negative-Secondary:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.ea-Btn-Black-White {
+    padding: 13px 19px;
+    font-family: Graphik;
+    font-size: 15px;
+    color: var(--ea-app-primary-colour-black);
+    background-color: var(--ea-app-primary-colour-white);
+    font-weight: bold;
+    border: 2px solid var(--ea-app-primary-colour-black);
+    border-radius: 5px;
+    min-width: var(--ea-app-btn-min-width);
+    opacity: 0.85;
+    transition: opacity .3s ease-in;
+    -moz-transition: opacity .3s ease-in;
+    -webkit-transition: opacity .3s ease-in;
+    -o-transition: opacity .3s ease-in;
+}
+
+.ea-Btn-Black-White:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+/* 
+Element modification
+ */
+
+ *, ::after, ::before {
+     box-sizing: border-box;
+ }
+
+body {
+    background-color: var(--ea-app-primary-colour-white);
+    margin:0;
+}
+
+section {
+    margin-bottom:1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: .5rem;
+}
+
+/* 
+Content 
+*/
+
+/*
+*   Cards
+*/ 
+
+.ea-App-Card-Deck {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
+    flex-flow: row wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.ea-Card {
+    position:relative;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-clip: border-box;
+    box-shadow: 0 4px 8px 2px rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    border: 2px solid var(--ea-app-primary-colour-dGrey);
+}
+
+.ea-App-Card-Deck .ea-Card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -ms-flex: 1 0 0%;
+    flex: 1 0 0%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    margin-right: 15px;
+    margin-bottom: 0;
+    margin-left: 15px;
+}
+
+.ea-Card-Top {
+    border-radius: 5px 5px 0 0;
+}
+
+.ea-Card-Content {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    padding: 1.25rem;
+}
+
+.ea-Card-Header {
+    font-family: Graphik;
+    font-size: 18px;
+}
+
+.ea-Card-Body {
+    padding: 0rem 0.25rem;
+}
+
+/*
+*   helpers/general
+*/ 
+
+.ea-M-B-1 {
+    margin-bottom: 1rem;
+}
+
+.content {
+    padding: 0px 20px;
+}
+
+.ea-header {
+    background-color: var(--ea-app-primary-colour-blue);
+    padding:30px 15px;
+}
+
+.ea-Custom-HR-Two-Fifths {
+    width: 40%;
+    left: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    margin-top: 10px;
+    border: 1px solid black!important;
+}
+
+/* 
+forms
+ */
+
+ .ea-Form-Label {
+    font-family: Graphik;
+    font-size: 14px;
+    color: var(--ea-app-primary-colour-black);
+    font-weight: normal;
+    display:block;
+}
+
+.ea-Form-Hint {
+    font-family: Graphik;
+    font-size: 11px;
+    color: var(--ea-app-primary-colour-black);
+    font-weight: normal;
+    display: block;
+    margin: 10px 0px;
+    opacity: 0.8;
+}
+
+
+.ea-Form-Group {
+    margin-bottom: 1rem;
+}
+
+.ea-Form-Input {
+    display: block;
+    width: 100%;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #000000;
+    border-radius: .25rem;
+    transition: border .1s ease-in;
+    -moz-transition: border .1s ease-in;
+    -webkit-transition: border .1s ease-in;
+    -o-transition: border .1s ease-in;
+}
+
+.ea-Form-Input:focus {
+    outline: 1px solid var(--ea-app-primary-colour-blue);
+    border: 1px solid var(--ea-app-primary-colour-blue);
+}

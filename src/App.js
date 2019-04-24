@@ -13,6 +13,7 @@ import { BrowserRouter as Router,
 // pages
 import MainPage from './pages/index.jsx';
 import AboutPage from './pages/about.jsx';
+import ContactPage from './pages/contact.jsx';
 import ErrorPage from './pages/404.jsx';
 
 // components
@@ -31,6 +32,8 @@ class App extends Component {
               <Route exact path="/" component={MainPage} />
               {/* About */}
               <Route exact path="/about" component={AboutPage} />
+              {/* Contact */}
+              <Route exact path="/about" component={ContactPage} />
               {/* 404s */}
               <Route exact path="/404" component={ErrorPage} />
               <Redirect to="/404"/>

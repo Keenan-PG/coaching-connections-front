@@ -16,27 +16,27 @@ Colours
 easy colouring  
 */
 
-.ea-App-Blue {
+.ea-Blue {
     color: var(--ea-app-primary-colour-blue)!important;
 }
 
-.ea-App-Black {
+.ea-Black {
     color: var(--ea-app-primary-colour-black)!important;
 }
 
-.ea-App-lGrey {
+.ea-lGrey {
     color: var(--ea-app-primary-colour-lGrey)!important;
 }
 
-.ea-App-White {
+.ea-White {
     color: var(--ea-app-primary-colour-white)!important;
 }
 
-.ea-App-Red {
+.ea-Red {
     color: var(--ea-app-secondary-colour-red)!important;
 }
 
-.ea-App-dGrey {
+.ea-dGrey {
     color: var(--ea-app-secondary-colour-dGrey)!important;
 }
 
@@ -44,27 +44,27 @@ easy colouring
 easy bg colouring 
 */
 
-.ea-App-Blue-BG {
+.ea-Blue-BG {
     background-color: var(--ea-app-primary-colour-blue)!important;
 }
 
-.ea-App-Black-BG {
+.ea-Black-BG {
     background-color: var(--ea-app-primary-colour-black)!important;
 }
 
-.ea-App-lGrey-BG {
+.ea-lGrey-BG {
     background-color: var(--ea-app-primary-colour-lGrey)!important;
 }
 
-.ea-App-White-BG {
+.ea-White-BG {
     background-color: var(--ea-app-primary-colour-white)!important;
 }
 
-.ea-App-Red-BG {
+.ea-Red-BG {
     background-color: var(--ea-app-secondary-colour-red)!important;
 }
 
-.ea-App-dGrey-BG {
+.ea-dGrey-BG {
     background-color: var(--ea-app-secondary-colour-dGrey)!important;
 }
 
@@ -75,29 +75,29 @@ Fonts
 /* regular */
 @font-face {
     font-family: Graphik;
-    src: url("./fonts/Graphik-Regular.ttf") format("ttf");
+    src: url("./assets/fonts/Graphik-Regular.ttf") format("ttf");
     font-weight: normal;
 }    
 /* bold */
 @font-face {
     font-family: Graphik;
-    src: url("./fonts/Graphik-Bold.ttf") format("ttf");
+    src: url("./assets/fonts/Graphik-Bold.ttf") format("ttf");
     font-weight: bold;
 }
 /* light */
 @font-face {
     font-family: Graphik Light;
-    src: url("./fonts/Graphik-Light.ttf") format("ttf");
+    src: url("./assets/fonts/Graphik-Light.ttf") format("ttf");
 }
 /* extra light */
 @font-face {
     font-family: Graphik ExtraLight;
-    src: url("./fonts/Graphik-Extralight.ttf") format("ttf");
+    src: url("./assets/fonts/Graphik-Extralight.ttf") format("ttf");
 }
 /* thin */
 @font-face {
     font-family: Graphik Thin;
-    src: url("./fonts/Graphik-Thin.ttf") format("ttf");
+    src: url("./assets/fonts/Graphik-Thin.ttf") format("ttf");
 }
 
 /*
@@ -117,7 +117,25 @@ Text
     font-weight: bold;
 }
 
+.ea-H1-Grad {
+    background: linear-gradient(to right, #9900CC 1%, #FF9900 19%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    font-family: Graphik;
+    font-size: 40px;
+    font-weight: bold;
+}
+
 .ea-H2 {
+    font-family: Graphik;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.ea-H2-Grad {
+    background: linear-gradient(to right, #9900CC 1%, #FF9900 19%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-family: Graphik;
     font-size: 26px;
     font-weight: bold;
@@ -149,6 +167,26 @@ button and link styles - hover effects
 
 .ea-Link:hover {
     opacity: 1;
+    color: var(--ea-app-primary-colour-blue);
+    text-decoration: none;
+}
+
+.ea-NavLink {
+    font-family: Graphik;
+    color: var(--ea-app-primary-colour-black);
+    font-weight: normal;
+    text-decoration: none;
+    opacity: 0.85;
+    transition: opacity .3s ease-in;
+    -moz-transition: opacity .3s ease-in;
+    -webkit-transition: opacity .3s ease-in;
+    -o-transition: opacity .3s ease-in;
+}
+
+.ea-NavLink:hover {
+    opacity: 1;
+    color: var(--ea-app-primary-colour-black);
+    text-decoration: none;
 }
 
 
@@ -289,6 +327,14 @@ buttons
 }
 
 /* 
+Header
+ */
+
+ .ea-Navbar {
+    background: (--ea-app-primary-colour-blue);
+ }
+
+/* 
 Element modification
  */
 
@@ -340,14 +386,6 @@ Content
 }
 
 .ea-Card {
-    position:relative;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    min-width: 0;
-    word-wrap: break-word;
     background-clip: border-box;
     box-shadow: 0 4px 8px 2px rgba(0,0,0,0.2);
     transition: 0.3s;
@@ -401,11 +439,6 @@ Content
 
 .content {
     padding: 0px 20px;
-}
-
-.ea-header {
-    background-color: var(--ea-app-primary-colour-blue);
-    padding:30px 15px;
 }
 
 .ea-Custom-HR-Two-Fifths {
@@ -466,4 +499,28 @@ forms
 .ea-Form-Input:focus {
     outline: 1px solid var(--ea-app-primary-colour-blue);
     border: 1px solid var(--ea-app-primary-colour-blue);
+}
+
+.ea-Custom-HR-Blue {
+    width: 50px;
+    left: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    border: 3px solid var(--ea-app-primary-colour-blue)!important;
+}
+
+.ea-Custom-HR-Black {
+    width: 50px;
+    left: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    border: 3px solid var(--ea-app-primary-colour-black)!important;
+}
+
+.ea-TextMiddle {
+    text-align: center;
 }

@@ -20,6 +20,11 @@ import ErrorPage from './pages/404.jsx';
 import Layout from './components/Layout';
 import Header from './components/Header';
 
+// icons
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faHome } from '@fortawesome/free-solid-svg-icons'
+library.add(faHome);
+
 class App extends Component {
   render() {
     return (
@@ -33,7 +38,7 @@ class App extends Component {
               {/* About */}
               <Route exact path="/about" component={AboutPage} />
               {/* Contact */}
-              <Route exact path="/about" component={ContactPage} />
+              <Route exact path="/contact" component={ContactPage} />
               {/* 404s */}
               <Route exact path="/404" component={ErrorPage} />
               <Redirect to="/404"/>

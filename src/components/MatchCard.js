@@ -3,19 +3,17 @@ import Card from 'react-bootstrap/Card';
 
 // have hamburger with logo/login next to it (like portal)
 
-const EACardImg = ({src, content}) => {
+const MatchCard = ({user, title, experience, offering}) => {
     return (
         <Card className="ea-Card">
-        <Card.Img variant="top" src={src} />
         <Card.Body>
+            <Card.Title>
+            </Card.Title>
             <Card.Text>
-                <h6 className="ea-BodyText-Bold">
-                    {content}
-                </h6>
             </Card.Text>
         </Card.Body>
     </Card>
     )
 }
 
-export default EACardImg;
+export default MatchCard;

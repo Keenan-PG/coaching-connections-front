@@ -25,7 +25,7 @@ const Header = () => {
                             </Nav.Link>
                             <Nav.Link className="ea-NavLink px-4 " href="/about">About</Nav.Link>
                             <Nav.Link className="ea-NavLink px-4 " href="#">My profile</Nav.Link>
-                            <Nav.Link className="ea-NavLink px-4 " href="/mymatches">My matches</Nav.Link>
+                            <Nav.Link className="ea-NavLink px-4 " href="#">My matches</Nav.Link>
                             <Nav.Link className="ea-NavLink px-4 " href="/contact">Contact</Nav.Link>
                         </Navbar.Collapse>
 

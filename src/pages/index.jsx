@@ -11,7 +11,7 @@ const MainPage = () => {
     return (
         <div>
             {/** top logo and text */}
-            <Row className="my-4">
+            <Row className="my-4 ea-lGrey-BG">
                 <Col className="justify-content-center">
                     <img
                         alt="Equality Allies"
@@ -47,24 +47,27 @@ const MainPage = () => {
                     <EACardImg 
                         src="https://via.placeholder.com/10" 
                         content={
-                            'Coaches/Coachees'
-                        }>
+                            <h3 className="ea-H2 ea-Black">Coaches/Coachees</h3>
+                        }
+                    >
                     </EACardImg>
                 </Col>
                 <Col>  
                     <EACardImg 
                         src="https://via.placeholder.com/10" 
                         content={
-                            'Your results'
-                        }>
+                            <h3 className="ea-H2 ea-Black">Your results</h3>
+                        }
+                    >
                     </EACardImg>
                 </Col>
                 <Col>
                     <EACardImg 
                         src="https://via.placeholder.com/10" 
                         content= {
-                            'Enter your details'
-                        }>
+                            <h3 className="ea-H2 ea-Black">Enter your details</h3>
+                        }
+                    >
                     </EACardImg>
                 </Col>
             </Row>

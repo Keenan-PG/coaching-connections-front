@@ -148,13 +148,6 @@ Text
     font-weight: normal;
 }
 
-.ea-BodyText-Bold {
-    font-family: Graphik;
-    font-size: 18px;
-    color: var(--ea-app-primary-colour-black);
-    font-weight: bold;
-}
-
 /*
 button and link styles - hover effects 
 */

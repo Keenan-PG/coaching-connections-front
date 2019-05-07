@@ -23,6 +23,7 @@ import Header from './components/Header';
 // icons
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faHome } from '@fortawesome/free-solid-svg-icons'
+import MatchesPage from './pages/matches';
 library.add(faHome);
 
 class App extends Component {
@@ -37,6 +38,8 @@ class App extends Component {
               <Route exact path="/" component={MainPage} />
               {/* About */}
               <Route exact path="/about" component={AboutPage} />
+              {/* Matches */}
+              <Route exact path="/mymatches" component={MatchesPage} />
               {/* Contact */}
               <Route exact path="/contact" component={ContactPage} />
               {/* 404s */}

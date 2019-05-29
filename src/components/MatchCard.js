@@ -1,49 +1,71 @@
 import React from 'react';
 
 import Card from 'react-bootstrap/Card';
+import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Collapse from 'react-bootstrap/Collapse';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 // have hamburger with logo/login next to it (like portal)
 
-const MatchCard = ({user, title, experience, offering}) => {
-    
-    // loop to break appart offering array
-    const renderOffers = (arr) => {
-        for(let i=0; i < arr.length; i++) {
-            let render = arr[i];
-            // PUT IN ICONS FOR CATEGORIES INSTEAD - BLUE ICONS 
-            // return (
-            //     <Col>
-        //          CATEGORY ICON
-            //    </Col>
-            // );
+class MatchCard extends React.Component {
+    constructor(props, context) {
+        super(props,context);
+
+        this.state = {
+            open: false,
         }
     }
 
-    return (
-        // Col renders as a div class col anyway
+    render() {
+        const { open } = this.state;
+
+        // adding commmas/spaces
+        const offeringStr = (offering) => offering.join(", ");
+ 
+        return (
             <Col>
                 <Card className="ea-Card">
                     <Card.Body>
                         <Card.Title className="ea-H2 ea-Blue py-1">
-                            {user}
+                            {this.props.user}
                         </Card.Title>
                         <Card.Subtitle className="ea-BodyText-Bold">
-                            {title}
+                            {this.props.title}
                         </Card.Subtitle>
                         <Card.Subtitle className="ea-BodyText py-2">
-                            {experience} years experience
+                            {this.props.experience} years experience
                         </Card.Subtitle>
                         <Card.Text className="ea-BodyText py-2">
-                            Offering: {renderOffers(offering)}
-                             {/* <Row>
-                                {renderOffers(offering)}
-                             </Row> */}
+                            <small>
+                                Offering: {offeringStr(this.props.offering)}
+                            </small>
                         </Card.Text>
+                        <Card.Footer className="ea-BodyText">
+                            <div className="text-center">
+                                {/* collapse trigger */}
+                                <FontAwesomeIcon 
+                                    icon="angle-down"
+                                    onClick={() => this.setState({ open: !open })}
+                                    aria-controls="example-collapse-text"
+                                    aria-expanded={open}
+                                ></FontAwesomeIcon>
+                            </div>
+
+                            <Collapse in={this.state.open}>
+                                <div id="example-collapse-text">
+                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                    terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
+                                    labore wes anderson cred nesciunt sapiente ea proident.
+                                </div>
+                            </Collapse>
+                        </Card.Footer>
                     </Card.Body>
                 </Card>
             </Col>
-    )
+        )
+    }
 }
 
 export default MatchCard;

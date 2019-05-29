@@ -24,7 +24,8 @@ import Header from './components/Header';
 // icons
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faHome } from '@fortawesome/free-solid-svg-icons'
-library.add(faHome);
+import { faAngleDown } from '@fortawesome/free-solid-svg-icons'
+library.add(faHome, faAngleDown);
 
 class App extends Component {
   render() {

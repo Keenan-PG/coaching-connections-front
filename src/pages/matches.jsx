@@ -34,9 +34,7 @@ const MatchesPage = () => {
                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
             </p>
             {/** cards */}
-            <Row className="my-4">
-                <MatchCardList users={users} />
-            </Row>
+            <MatchCardList users={users} />
         </div>
     );
 }

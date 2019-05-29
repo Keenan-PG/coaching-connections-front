@@ -1,9 +1,11 @@
 import React from 'react';
+import Row from 'react-bootstrap/Row';
 import MatchCard from './MatchCard';
 
 const MatchCardList = ({ users }) => {
     return (
         <div>
+            <Row>
             {
                 users.map((user, i) => {
                     // have to make key so react can keep track of props 
@@ -18,6 +20,7 @@ const MatchCardList = ({ users }) => {
                     );
                 })
             }
+            </Row>
         </div>
     );
 }

@@ -1,21 +1,27 @@
 import React from 'react';
+
 import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 
 // have hamburger with logo/login next to it (like portal)
 
 const MatchCard = ({user, title, experience, offering}) => {
+    
+    // loop to break appart offering array
     const renderOffers = (arr) => {
         for(let i=0; i < arr.length; i++) {
-            let render;
-            if ( i !== (arr.length - 1)) {
-                render = arr[i]
-            }
+            let render = arr[i];
+            // PUT IN ICONS FOR CATEGORIES INSTEAD - BLUE ICONS 
+            // return (
+            //     <Col>
+        //          CATEGORY ICON
+            //    </Col>
+            // );
         }
     }
 
     return (
-        <div>
+        // Col renders as a div class col anyway
             <Col>
                 <Card className="ea-Card">
                     <Card.Body>
@@ -28,14 +34,15 @@ const MatchCard = ({user, title, experience, offering}) => {
                         <Card.Subtitle className="ea-BodyText py-2">
                             {experience} years experience
                         </Card.Subtitle>
-                        <ul className="ea-BodyText">
-                            Offering: 
-                            {renderOffers(offering)}
-                        </ul>
+                        <Card.Text className="ea-BodyText py-2">
+                            Offering: {renderOffers(offering)}
+                             {/* <Row>
+                                {renderOffers(offering)}
+                             </Row> */}
+                        </Card.Text>
                     </Card.Body>
                 </Card>
             </Col>
-        </div>
     )
 }
 

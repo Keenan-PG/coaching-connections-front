@@ -4,7 +4,7 @@ export const users = [
         user: 'Keenan G',
         title: 'Web/Software Dev',
         experience: 3.5,
-        offering: [ 'Mentoring', 'Upskilling' ]
+        offering: [ 'Mentoring', 'Upskilling', 'Life advice' ]
     },
     {
         id: 2,

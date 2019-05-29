@@ -5,6 +5,12 @@ import magnifyGraphic from '../assets/magnifyGraphic.png'
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
+// components
+import MatchCardList from '../components/MatchCardList';
+
+// array 
+import { users } from '../users';
+
 const MatchesPage = () => {
     return (
         <div>
@@ -29,12 +35,7 @@ const MatchesPage = () => {
             </p>
             {/** cards */}
             <Row className="my-4">
-                <Col>
-                </Col>
-                <Col>  
-                </Col>
-                <Col>
-                </Col>
+                <MatchCardList users={users} />
             </Row>
         </div>
     );

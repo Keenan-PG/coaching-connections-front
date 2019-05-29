@@ -48,24 +48,24 @@ const MainPage = () => {
                         src="https://via.placeholder.com/10" 
                         content={
                             'Coaches/Coachees'
-                        }>
-                    </EACardImg>
+                        }
+                    />
                 </Col>
                 <Col>  
                     <EACardImg 
                         src="https://via.placeholder.com/10" 
                         content={
                             'Your results'
-                        }>
-                    </EACardImg>
+                        }
+                    />
                 </Col>
                 <Col>
                     <EACardImg 
                         src="https://via.placeholder.com/10" 
                         content= {
                             'Enter your details'
-                        }>
-                    </EACardImg>
+                        } 
+                    />
                 </Col>
             </Row>
         </div>

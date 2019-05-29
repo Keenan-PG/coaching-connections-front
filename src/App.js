@@ -13,6 +13,7 @@ import { BrowserRouter as Router,
 // pages
 import MainPage from './pages/index.jsx';
 import AboutPage from './pages/about.jsx';
+import MatchesPage from './pages/matches';
 import ContactPage from './pages/contact.jsx';
 import ErrorPage from './pages/404.jsx';
 
@@ -23,14 +24,13 @@ import Header from './components/Header';
 // icons
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { faHome } from '@fortawesome/free-solid-svg-icons'
-import MatchesPage from './pages/matches';
 library.add(faHome);
 
 class App extends Component {
   render() {
     return (
       <div>
-        <Header></Header>
+        <Header/>
         <Layout>
           <Router>
             <Switch>

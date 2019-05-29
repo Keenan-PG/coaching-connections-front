@@ -1,5 +1,4 @@
 import React from 'react';
-import Layout from '../components/Layout';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import littleLogo from '../assets/littleLogo.png'
@@ -37,26 +36,23 @@ const AboutPage = () => {
                                 'Become an ally'
                             content=
                                 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' 
-                            >
-                        </EACardWhite>
+                        />
                     </Col>
                     <Col>
                     <EACardWhite
-                    title=
-                        'Being a mentor'
-                    content=
-                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' 
-                    >
-                </EACardWhite>
+                        title=
+                            'Being a mentor'
+                        content=
+                            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' 
+                    />
                     </Col>
                     <Col>
                     <EACardWhite
-                    title=
-                        'Being a mentee'
-                    content=
-                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' 
-                    >
-                </EACardWhite>
+                        title=
+                            'Being a mentee'
+                        content=
+                            'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.' 
+                    />
                     </Col>
                 </Row>
         </div>

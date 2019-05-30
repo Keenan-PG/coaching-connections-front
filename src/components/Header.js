@@ -9,7 +9,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 const Header = () => {
     return (
         <div>
-            <Navbar className="EA-Navbar mb-3">
+            <Navbar className="EA-Navbar mb-3" id="header">
             
                         <Navbar.Brand href="/">
                         <img

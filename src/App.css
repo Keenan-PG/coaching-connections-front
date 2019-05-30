@@ -111,6 +111,15 @@ Text
     font-weight: bold;
 }
 
+.ea-HeroTitle-Grad {
+    background: linear-gradient(to right, #9900CC 1%, #FF9900 19%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    font-family: Graphik;
+    font-size: 60px;
+    font-weight: bold;
+}
+
 .ea-H1 {
     font-family: Graphik;
     font-size: 40px;

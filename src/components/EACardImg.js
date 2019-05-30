@@ -8,11 +8,9 @@ const EACardImg = ({src, content}) => {
         <Card className="ea-Card">
         <Card.Img variant="top" src={src} />
         <Card.Body>
-            <Card.Text>
                 <h6 className="ea-BodyText-Bold">
                     {content}
                 </h6>
-            </Card.Text>
         </Card.Body>
     </Card>
     )

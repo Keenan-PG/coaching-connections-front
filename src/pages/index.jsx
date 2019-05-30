@@ -1,6 +1,5 @@
 import React from 'react';
 import bigLogo from '../assets/bigLogo.png'
-
 // bootstrap
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -11,7 +10,7 @@ const MainPage = () => {
     return (
         <div>
             {/** top logo and text */}
-            <Row className="my-4">
+            <Row className="my-4" id="landing">
                 <Col className="justify-content-center">
                     <img
                         alt="Equality Allies"
@@ -30,7 +29,7 @@ const MainPage = () => {
                 </Col>
             </Row>
             {/** categories head and text */}
-            <Row className="mt-4">   
+            <Row className="my-5">   
                 <Col>
                     <h1 className="ea-H1 ea-Black">
                         Categories

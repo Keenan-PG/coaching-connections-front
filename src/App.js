@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-// bootstrap and custom styles
+// bootstrap and custom styles/scripts
 import './App.css';
 
 // routing

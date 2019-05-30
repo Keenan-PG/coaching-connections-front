@@ -21,7 +21,14 @@ class MatchCard extends React.Component {
     render() {
         const { open } = this.state;
 
-        // adding commmas/spaces
+        // easy acces props
+        const name = this.props.user;
+        const fName = name.split(" ")[0];
+        const title = this.props.title;
+        const experience = this.props.experience;
+        const offering = this.props.offering;
+
+        // func to add commmas/spaces
         const offeringStr = (offering) => offering.join(", ");
  
         return (
@@ -30,17 +37,17 @@ class MatchCard extends React.Component {
                 <Card className="ea-Card">
                     <Card.Body>
                         <Card.Title className="ea-H2 ea-Blue py-1">
-                            {this.props.user}
+                            {name}
                         </Card.Title>
                         <Card.Subtitle className="ea-BodyText-Bold">
-                            {this.props.title}
+                            {title}
                         </Card.Subtitle>
                         <Card.Subtitle className="ea-BodyText py-2">
-                            {this.props.experience} years experience
+                            {experience} years experience
                         </Card.Subtitle>
                         <Card.Text className="ea-BodyText py-2">
                             <small>
-                                Offering: {offeringStr(this.props.offering)}
+                                Offering: {offeringStr(offering)}
                             </small>
                         </Card.Text>
                         <Card.Footer className="ea-BodyText">
@@ -52,7 +59,7 @@ class MatchCard extends React.Component {
                                     aria-controls="example-collapse-text"
                                     aria-expanded={open}
                                     className="ea-Btn-Match">
-                                    Request {this.props.user.split(" ")[0]}
+                                    Request {fName}
                                 </Button>
 
                             </div>

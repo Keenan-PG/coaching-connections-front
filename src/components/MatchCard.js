@@ -1,8 +1,8 @@
 import React from 'react';
 
 import Card from 'react-bootstrap/Card';
-import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import Button from 'react-bootstrap/Button';
 import Collapse from 'react-bootstrap/Collapse';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -25,7 +25,8 @@ class MatchCard extends React.Component {
         const offeringStr = (offering) => offering.join(", ");
  
         return (
-            <Col>
+            <Col xs={4} 
+            className="mt-5">
                 <Card className="ea-Card">
                     <Card.Body>
                         <Card.Title className="ea-H2 ea-Blue py-1">
@@ -43,14 +44,17 @@ class MatchCard extends React.Component {
                             </small>
                         </Card.Text>
                         <Card.Footer className="ea-BodyText">
-                            <div className="text-center">
+                            <div className="text-right">
                                 {/* collapse trigger */}
-                                <FontAwesomeIcon 
-                                    icon="angle-down"
+
+                                <Button
                                     onClick={() => this.setState({ open: !open })}
                                     aria-controls="example-collapse-text"
                                     aria-expanded={open}
-                                ></FontAwesomeIcon>
+                                    className="ea-Btn-Match">
+                                    Request {this.props.user.split(" ")[0]}
+                                </Button>
+
                             </div>
 
                             <Collapse in={this.state.open}>

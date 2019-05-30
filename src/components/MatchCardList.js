@@ -5,7 +5,7 @@ import MatchCard from './MatchCard';
 const MatchCardList = ({ users }) => {
     return (
         <div>
-            <Row>
+            <Row className="py-4">
             {
                 users.map((user, i) => {
                     // have to make key so react can keep track of props 

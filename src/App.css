@@ -10,6 +10,7 @@ Colours
     --ea-app-secondary-colour-dGrey: #333333;
     --ea-app-btn-min-width: 195px;
     --ea-app-form-min-width: 300px;
+    overflow: overlay;
 }
 
 /* 
@@ -108,15 +109,6 @@ Text
     font-family: Graphik;
     font-size: 60px;
     color: var(--ea-app-primary-colour-blue);
-    font-weight: bold;
-}
-
-.ea-HeroTitle-Grad {
-    background: linear-gradient(to right, #9900CC 1%, #FF9900 19%);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-    font-family: Graphik;
-    font-size: 60px;
     font-weight: bold;
 }
 
@@ -598,9 +590,19 @@ forms
 
 .card-footer {
     padding: .75rem 0rem 0rem 0rem;
+    background-color: var(--ea-app-primary-colour-white);
 }
 
-.collapse {
+.show {
     padding-top: 2rem;
     width: 100%;
+    transition: 0.15s padding ease-in;
+}
+
+#landing {
+    height:80vh;
+}
+
+.no-pad-left {
+    padding-left: 0;
 }

@@ -610,3 +610,10 @@ forms
 .contactPlane {
     width: 100%;
 }
+
+/* matchcard */
+
+.icons {
+    color: var(--ea-app-primary-colour-blue);
+    font-size: 1rem;
+}

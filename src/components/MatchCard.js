@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Card from 'react-bootstrap/Card';
+import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Collapse from 'react-bootstrap/Collapse';
@@ -59,9 +60,39 @@ class MatchCard extends React.Component {
                             <Card.Subtitle className="ea-BodyText py-2">
                                 {experience} years experience
                             </Card.Subtitle>
-                            <Card.Text className="ea-BodyText py-2">
+                            <Card.Text className="ea-BodyText py-2 m-0">
                                 <small>
-                                    Offering: {offeringStr(offering)}
+                                    Offering:
+                                    <Row className="p-1 pt-4 text-center">
+                                    {/* RENDERING SOCIAL ICON w/ Conditional  */}
+                                    {offering.includes("Social Connection") ? 
+                                        <div className="col icons">
+                                            <FontAwesomeIcon icon="users" size="2x"></FontAwesomeIcon>
+                                            <p><small className="ea-Black">Social</small></p>
+                                        </div> 
+                                    : false}
+                                    {/* RENDERING ADVICE ICON w/ Conditional*/}
+                                    {offering.includes("Advice") ? 
+                                        <div className="col icons">
+                                            <FontAwesomeIcon icon="comments" size="2x"></FontAwesomeIcon>
+                                            <p><small className="ea-Black">Advice</small></p>
+                                        </div> 
+                                    : false}                                    
+                                    {/* RENDERING UPSKILLING ICON w/ Conditional  */}
+                                    {offering.includes("Upskilling") ? 
+                                        <div className="col icons">
+                                            <FontAwesomeIcon icon="book" size="2x"></FontAwesomeIcon>
+                                            <p><small className="ea-Black">Upskilling</small></p>
+                                        </div> 
+                                    : false}                                    
+                                    {/* RENDERING MENTORING ICON w/ Conditional  */}
+                                    {offering.includes("Mentoring") ? 
+                                        <div className="col icons">
+                                            <FontAwesomeIcon icon="people-carry" size="2x"></FontAwesomeIcon>
+                                            <p><small className="ea-Black">Mentoring</small></p>
+                                        </div> 
+                                    : false}
+                                    </Row>
                                 </small>
 
 

@@ -12,7 +12,7 @@ import {Animated} from "react-animated-css";
 const AboutPage = () => {
     return (
         <div>
-        <Animated animationInDelay="650" animationIn="fadeIn">    
+        <Animated animationInDelay={650} animationIn="fadeIn">    
                 <Row>
                     <Col>
                         <h1 className="ea-HeroTitle ea-Blue">About us</h1>
@@ -27,7 +27,7 @@ const AboutPage = () => {
                     </Col>
                 </Row>
         </Animated>
-        <Animated animationInDelay="950" animationIn="fadeIn">    
+        <Animated animationInDelay={950} animationIn="fadeIn">    
                 <p className="ea-BodyText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                 Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
@@ -41,7 +41,7 @@ const AboutPage = () => {
         </Animated>   
                 <Row className="my-5">   
                     <Col>
-                        <Animated animationInDelay="1100" animationIn="fadeInUp"> 
+                        <Animated animationInDelay={1100} animationIn="fadeInUp"> 
                             <EACardWhite
                                 title=
                                     'Become an ally'
@@ -51,7 +51,7 @@ const AboutPage = () => {
                         </Animated>
                     </Col>
                     <Col>
-                        <Animated animationInDelay="1250" animationIn="fadeInUp"> 
+                        <Animated animationInDelay={1250} animationIn="fadeInUp"> 
                             <EACardWhite
                                 title=
                                     'Being a mentor'
@@ -61,7 +61,7 @@ const AboutPage = () => {
                         </Animated>
                     </Col>
                     <Col>
-                        <Animated animationInDelay="1400" animationIn="fadeInUp"> 
+                        <Animated animationInDelay={1400} animationIn="fadeInUp"> 
                             <EACardWhite
                                 title=
                                     'Being a mentee'

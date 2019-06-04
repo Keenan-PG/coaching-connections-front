@@ -16,7 +16,7 @@ import {Animated} from "react-animated-css";
 const Header = () => {
     return (
         <div>
-        <Animated animationInDelay="350" animationIn="fadeInDown" isVisible={true}>   
+        <Animated animationInDelay={350} animationIn="fadeInDown" isVisible={true}>   
             <Navbar className="EA-Navbar mb-3" id="header">   
                     <Col>
                         <Navbar.Brand href="/">
@@ -28,7 +28,7 @@ const Header = () => {
                         </Navbar.Brand>
                     </Col>
                     
-                    <div class="col no-pad-left">
+                    <div className="col no-pad-left">
                         <Navbar.Toggle />
                         <Navbar.Collapse className="justify-content-between">
                             <Nav.Link className="ea-NavLink px-4 " href="/">

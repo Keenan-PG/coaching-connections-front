@@ -4,6 +4,8 @@ import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Collapse from 'react-bootstrap/Collapse';
+//animate
+import {Animated} from "react-animated-css";
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
@@ -27,53 +29,69 @@ class MatchCard extends React.Component {
         const title = this.props.title;
         const experience = this.props.experience;
         const offering = this.props.offering;
+        const interval = this.props.space;
 
         // func to add commmas/spaces
-        const offeringStr = (offering) => offering.join(", ");
+        const offeringStr = (offeringArr) => offeringArr.join(", ");
+
+        const renderOfferings = (offeringArr) => {
+            const mentoring = offeringArr.includes("Mentoring");
+            const upskilling = offeringArr.includes("Upskilling");
+            const lifeAdvice = offeringArr.includes("Life advice");
+
+            const arr = [ mentoring, upskilling, lifeAdvice ];
+
+            return arr;
+        }
  
         return (
             <Col xs={4} 
             className="mt-5">
-                <Card className="ea-Card">
-                    <Card.Body>
-                        <Card.Title className="ea-H2 ea-Blue py-1">
-                            {name}
-                        </Card.Title>
-                        <Card.Subtitle className="ea-BodyText-Bold">
-                            {title}
-                        </Card.Subtitle>
-                        <Card.Subtitle className="ea-BodyText py-2">
-                            {experience} years experience
-                        </Card.Subtitle>
-                        <Card.Text className="ea-BodyText py-2">
-                            <small>
-                                Offering: {offeringStr(offering)}
-                            </small>
-                        </Card.Text>
-                        <Card.Footer className="ea-BodyText">
-                            <div className="text-right">
-                                {/* collapse trigger */}
+                <Animated animationInDelay={interval} animationIn="fadeInUp"> 
+                    <Card className="ea-Card">
+                        <Card.Body>
+                            <Card.Title className="ea-H2 ea-Blue py-1">
+                                {name}
+                            </Card.Title>
+                            <Card.Subtitle className="ea-BodyText-Bold">
+                                {title}
+                            </Card.Subtitle>
+                            <Card.Subtitle className="ea-BodyText py-2">
+                                {experience} years experience
+                            </Card.Subtitle>
+                            <Card.Text className="ea-BodyText py-2">
+                                <small>
+                                    Offering: {offeringStr(offering)}
+                                </small>
 
-                                <Button
-                                    onClick={() => this.setState({ open: !open })}
-                                    aria-controls="example-collapse-text"
-                                    aria-expanded={open}
-                                    className="ea-Btn-Match">
-                                    Request {fName}
-                                </Button>
 
-                            </div>
 
-                            <Collapse in={this.state.open}>
-                                <div id="example-collapse-text">
-                                    Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-                                    terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
-                                    labore wes anderson cred nesciunt sapiente ea proident.
+                            </Card.Text>
+                            <Card.Footer className="ea-BodyText">
+                                <div className="text-right">
+                                    {/* collapse trigger */}
+
+                                    <Button
+                                        onClick={() => this.setState({ open: !open })}
+                                        aria-controls="example-collapse-text"
+                                        aria-expanded={open}
+                                        className="ea-Btn-Match">
+                                        Request {fName}
+                                    </Button>
+
                                 </div>
-                            </Collapse>
-                        </Card.Footer>
-                    </Card.Body>
-                </Card>
+
+                                <Collapse in={this.state.open}>
+                                    <div id="example-collapse-text">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                        terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
+                                        labore wes anderson cred nesciunt sapiente ea proident.
+                                    </div>
+                                </Collapse>
+                            </Card.Footer>
+                        </Card.Body>
+                    </Card>
+                </Animated>
             </Col>
         )
     }

@@ -8,10 +8,11 @@ const MatchCardList = ({ users }) => {
             <Row className="py-4">
             {
                 users.map((user, i) => {
-                    // have to make key so react can keep track of props 
-                    return (
+                    // have to make key so react can keep track of dom elements 
+                    return (  
                         <MatchCard 
                             key={i}
+                            space={i*150} 
                             user={users[i].user}
                             title={users[i].title} 
                             experience={users[i].experience} 

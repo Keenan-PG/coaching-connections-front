@@ -606,3 +606,7 @@ forms
 .no-pad-left {
     padding-left: 0;
 }
+
+.contactPlane {
+    width: 100%;
+}

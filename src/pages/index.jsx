@@ -14,7 +14,7 @@ const MainPage = () => {
             {/** top logo and text */}
             <Row className="my-4" id="landing">
                 <Col className="justify-content-center my-auto">
-                    <Animated animationInDelay="950" animationIn="fadeIn">    
+                    <Animated animationInDelay={950} animationIn="fadeIn">    
                         <img
                             alt="Equality Allies"
                             src={bigLogo}
@@ -22,16 +22,16 @@ const MainPage = () => {
                     </Animated>
                 </Col>
                 <Col className="my-auto">  
-                    <Animated animationInDelay="750" animationIn="fadeIn">          
+                    <Animated animationInDelay={750} animationIn="fadeIn">          
                         <h1 className="ea-HeroTitle">Coaching Connections</h1>
                         <hr className="ea-Custom-HR-Blue my-5"></hr>
                     </Animated>
-                    <Animated animationInDelay="950" animationIn="fadeIn">  
+                    <Animated animationInDelay={950} animationIn="fadeIn">  
                         <p className="ea-BodyText my-3">
                             Connect - Coach - Continue to grow
                         </p>
                     </Animated>
-                    <Animated animationInDelay="1050" animationIn="fadeIn">  
+                    <Animated animationInDelay={1050} animationIn="fadeIn">  
                         <Button variant="primary" className="btn-lg ea-Btn-Positive-Secondary my-3">
                             Get Started
                         </Button>
@@ -41,7 +41,7 @@ const MainPage = () => {
             {/** categories head and text */}
             <Row className="my-5">   
                 <Col>
-                    <Animated animationInDelay="1100" animationIn="fadeIn"> 
+                    <Animated animationInDelay={1100} animationIn="fadeIn"> 
                         <h1 className="ea-H1 ea-Black">
                             Categories
                         </h1>
@@ -55,7 +55,7 @@ const MainPage = () => {
             {/** cards */}
             <Row className="my-4">
                 <Col>
-                    <Animated animationInDelay="1100" animationIn="fadeInUp"> 
+                    <Animated animationInDelay={1100} animationIn="fadeInUp"> 
                         <EACardImg 
                             src="https://via.placeholder.com/10" 
                             content={
@@ -65,7 +65,7 @@ const MainPage = () => {
                     </Animated>
                 </Col>
                 <Col>  
-                    <Animated animationInDelay="1250" animationIn="fadeInUp"> 
+                    <Animated animationInDelay={1250} animationIn="fadeInUp"> 
                         <EACardImg 
                             src="https://via.placeholder.com/10" 
                             content={
@@ -75,7 +75,7 @@ const MainPage = () => {
                     </Animated>
                 </Col>
                 <Col>
-                    <Animated animationInDelay="1400" animationIn="fadeInUp"> 
+                    <Animated animationInDelay={1400} animationIn="fadeInUp"> 
                         <EACardImg 
                             src="https://via.placeholder.com/10" 
                             content= {

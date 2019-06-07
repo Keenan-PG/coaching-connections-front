@@ -74,6 +74,7 @@ class MatchCard extends React.Component {
                                     {/* RENDERING ADVICE ICON w/ Conditional*/}
                                     {offering.includes("Advice") ? 
                                         <div className="col icons">
+                                            <p>Hello</p>
                                             <FontAwesomeIcon icon="comments" size="2x"></FontAwesomeIcon>
                                             <p><small className="ea-Black">Advice</small></p>
                                         </div> 

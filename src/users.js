@@ -4,7 +4,7 @@ export const users = [
         user: 'Keenan Golding',
         title: 'Web/Software Dev',
         experience: 3.5,
-        offering: [ 'Social Connection', 'Advice', 'Upskilling', 'Mentoring' ]
+        offering: [ 'Social Connection', 'Advice', 'Upskilling', 'Professional Guidance' ]
     },
     {
         id: 2,
@@ -25,7 +25,7 @@ export const users = [
         user: 'Emily McGonagle',
         title: 'Web/Software Dev',
         experience: 3.5,
-        offering: [ 'Social Connection', 'Upskilling', 'Mentoring' ]
+        offering: [ 'Social Connection', 'Upskilling', 'Professional Guidance' ]
     },
     {
         id: 5,
@@ -39,14 +39,14 @@ export const users = [
         user: 'Brad Singleton',
         title: 'PMO',
         experience: 7.3,
-        offering: [ 'Social Connection', 'Mentoring' ]
+        offering: [ 'Social Connection', 'Professional Guidance' ]
     },    
     {
         id: 7,
         user: 'Rosie Barton',
         title: 'Web/Software Dev',
         experience: 3.5,
-        offering: [ 'Upskilling', 'Mentoring' ]
+        offering: [ 'Upskilling', 'Professional Guidance' ]
     },
     {
         id: 6,
@@ -60,6 +60,6 @@ export const users = [
         user: 'Ben Newland',
         title: 'PMO',
         experience: 7.3,
-        offering: [ 'Mentoring', 'Advice' ]
+        offering: [ 'Professional Guidance', 'Advice' ]
     }
 ]

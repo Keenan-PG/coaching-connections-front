@@ -15,7 +15,7 @@ import {Animated} from "react-animated-css";
 
 const Header = () => {
     return (
-        <div>
+        <div className="p-05">
         <Animated animationInDelay={350} animationIn="fadeInDown" isVisible={true}>   
             <Navbar className="EA-Navbar mb-3" id="header">   
                     <Col>
@@ -30,14 +30,14 @@ const Header = () => {
                     
                     <div className="col no-pad-left">
                         <Navbar.Toggle />
-                        <Navbar.Collapse className="justify-content-between">
+                        <Navbar.Collapse className="justify-content-around">
                             <Nav.Link className="ea-NavLink px-4 " href="/">
                                 <FontAwesomeIcon icon="home"></FontAwesomeIcon>
                             </Nav.Link>
                             <Nav.Link className="ea-NavLink px-4 " href="/about">About</Nav.Link>
                             <Nav.Link className="ea-NavLink px-4 " href="#">My profile</Nav.Link>
                             <Nav.Link className="ea-NavLink px-4 " href="/mymatches">My matches</Nav.Link>
-                            <Nav.Link className="ea-NavLink px-4 " href="/contact">Contact</Nav.Link>
+                            <Nav.Link className="ea-NavLink px-4 " href="/contact">Contact us</Nav.Link>
                         </Navbar.Collapse>
                     </div>
             </Navbar>

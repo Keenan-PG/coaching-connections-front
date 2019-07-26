@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
@@ -12,7 +12,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 // have hamburger with logo/login next to it (like portal)
 
-class MatchCard extends React.Component {
+class MatchCard extends Component {
     constructor(props, context) {
         super(props,context);
 
@@ -31,19 +31,6 @@ class MatchCard extends React.Component {
         const experience = this.props.experience;
         const offering = this.props.offering;
         const interval = this.props.space;
-
-        // func to add commmas/spaces
-        const offeringStr = (offeringArr) => offeringArr.join(", ");
-
-        const renderOfferings = (offeringArr) => {
-            const mentoring = offeringArr.includes("Mentoring");
-            const upskilling = offeringArr.includes("Upskilling");
-            const lifeAdvice = offeringArr.includes("Life advice");
-
-            const arr = [ mentoring, upskilling, lifeAdvice ];
-
-            return arr;
-        }
  
         return (
             <Col xs={4} 
@@ -85,11 +72,11 @@ class MatchCard extends React.Component {
                                             <p><small className="ea-Black">Upskilling</small></p>
                                         </div> 
                                     : false}                                    
-                                    {/* RENDERING MENTORING ICON w/ Conditional  */}
-                                    {offering.includes("Mentoring") ? 
+                                    {/* RENDERING Professional Guidance ICON w/ Conditional  */}
+                                    {offering.includes("Professional Guidance") ? 
                                         <div className="col icons">
                                             <FontAwesomeIcon icon="people-carry" size="2x"></FontAwesomeIcon>
-                                            <p><small className="ea-Black">Mentoring</small></p>
+                                            <p><small className="ea-Black">Guidance</small></p>
                                         </div> 
                                     : false}
                                     </Row>
@@ -111,14 +98,16 @@ class MatchCard extends React.Component {
                                     </Button>
 
                                 </div>
-
-                                <Collapse in={this.state.open}>
-                                    <div id="example-collapse-text">
-                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-                                        terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
-                                        labore wes anderson cred nesciunt sapiente ea proident.
-                                    </div>
-                                </Collapse>
+                                <div>                                
+                                    <Collapse in={this.state.open}>
+                                        <div id="example-collapse-text" className="py-2">
+                                            <div className="ea-BodyText-Bold card-subtitle h6">More info</div>
+                                            <div className="ea-BodyText">Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                            terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer
+                                            labore wes anderson cred nesciunt sapiente ea proident.</div>
+                                        </div>
+                                    </Collapse>
+                                </div>
                             </Card.Footer>
                         </Card.Body>
                     </Card>

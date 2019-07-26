@@ -31,7 +31,7 @@ class App extends Component {
     return (
       <div>
         <Header/>
-        <Layout>
+        <Layout className="mt-1">
           <Router>
             <Switch>
               {/* Home */}

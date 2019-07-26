@@ -1,6 +1,6 @@
 import React from 'react';
 //img
-import logo from '../assets/logo.png';
+import logo from '../../assets/logo.png';
 //bootstrap
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
@@ -17,7 +17,7 @@ const Header = () => {
     return (
         <div className="p-05">
         <Animated animationInDelay={350} animationIn="fadeInDown" isVisible={true}>   
-            <Navbar className="EA-Navbar mb-3" id="header">   
+            <Navbar className="navbar mb-3" id="header">   
                     <Col>
                         <Navbar.Brand href="/">
                         <img
@@ -28,16 +28,16 @@ const Header = () => {
                         </Navbar.Brand>
                     </Col>
                     
-                    <div className="col no-pad-left">
+                    <div className="col pl-0">
                         <Navbar.Toggle />
                         <Navbar.Collapse className="justify-content-around">
-                            <Nav.Link className="ea-NavLink px-4 " href="/">
+                            <Nav.Link className="navbar-link px-4 " href="/">
                                 <FontAwesomeIcon icon="home"></FontAwesomeIcon>
                             </Nav.Link>
-                            <Nav.Link className="ea-NavLink px-4 " href="/about">About</Nav.Link>
-                            <Nav.Link className="ea-NavLink px-4 " href="#">My profile</Nav.Link>
-                            <Nav.Link className="ea-NavLink px-4 " href="/mymatches">My matches</Nav.Link>
-                            <Nav.Link className="ea-NavLink px-4 " href="/contact">Contact us</Nav.Link>
+                            <Nav.Link className="navbar-link px-4 " href="/about">About</Nav.Link>
+                            <Nav.Link className="navbar-link px-4 " href="#">My profile</Nav.Link>
+                            <Nav.Link className="navbar-link px-4 " href="/mymatches">My matches</Nav.Link>
+                            <Nav.Link className="navbar-link px-4 " href="/contact">Contact us</Nav.Link>
                         </Navbar.Collapse>
                     </div>
             </Navbar>

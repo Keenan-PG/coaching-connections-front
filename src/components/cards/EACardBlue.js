@@ -5,15 +5,15 @@ import Card from 'react-bootstrap/Card';
 
 const EACardBlue = ({title, content}) => {
     return (
-        <Card className="ea-Card">
+        <Card className="card">
         <Card.Body>
             <Card.Title>
-                <h6 className="ea-BodyText-Bold">
+                <h6 className="body-text-bold">
                     {title}
                 </h6>
             </Card.Title>
             <Card.Text>
-                <p className="ea-BodyText">
+                <p className="body-text">
                     {content}
                 </p>
             </Card.Text>

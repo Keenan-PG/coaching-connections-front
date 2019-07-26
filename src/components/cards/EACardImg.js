@@ -5,10 +5,10 @@ import Card from 'react-bootstrap/Card';
 
 const EACardImg = ({src, content}) => {
     return (
-        <Card className="ea-Card">
+        <Card className="card">
         <Card.Img variant="top" src={src} />
         <Card.Body>
-                <h6 className="ea-BodyText-Bold">
+                <h6 className="body-text-bold">
                     {content}
                 </h6>
         </Card.Body>

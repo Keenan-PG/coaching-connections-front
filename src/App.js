@@ -18,8 +18,8 @@ import ContactPage from './pages/contact.jsx';
 import ErrorPage from './pages/404.jsx';
 
 // components
-import Layout from './components/Layout';
-import Header from './components/Header';
+import Layout from './components/core/Layout';
+import Header from './components/core/Header';
 
 // icons
 import { library } from '@fortawesome/fontawesome-svg-core'

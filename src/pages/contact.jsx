@@ -13,8 +13,8 @@ const ContactPage = () => {
             <Animated animationInDelay={650} animationIn="fadeIn">    
                     <Row>
                         <Col>
-                            <h1 className="ea-HeroTitle ea-Blue">Contact us</h1>
-                            <hr className="ea-Custom-HR-Blue my-5"></hr>
+                            <h1 className="hero-title blue">Contact us</h1>
+                            <hr className="hr-blue my-5"></hr>
                         </Col>
                         <Col className="text-center">
                             <img
@@ -26,7 +26,7 @@ const ContactPage = () => {
                     </Row>
             </Animated>
             <Animated animationInDelay={750} animationIn="fadeIn"> 
-                <p className="ea-BodyText my-5">
+                <p className="body-text my-5">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                     Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 

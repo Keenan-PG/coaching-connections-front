@@ -1,4 +1,5 @@
 import React from 'react';
+// img
 import magnifyGraphic from '../assets/magnifyGraphic.png'
 // bootstrap
 import Row from 'react-bootstrap/Row';
@@ -8,6 +9,8 @@ import {Animated} from "react-animated-css";
 // content comps
 import Title from '../components/text/Title';
 import BodyText from '../components/text/BodyText';
+// form
+import ContactForm from '../components/forms/ContactForm';
 
 const ContactPage = () => {
     return (
@@ -35,7 +38,9 @@ const ContactPage = () => {
                     spacing="my-5"
                 ></BodyText> 
             </Animated>
-
+            <Animated animationInDelay={850} animationIn="fadeIn"> 
+                <ContactForm></ContactForm>
+            </Animated>
         </div>
     );
 }

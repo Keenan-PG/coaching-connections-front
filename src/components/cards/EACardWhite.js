@@ -1,19 +1,20 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
-
-// have hamburger with logo/login next to it (like portal)
+// styles
+import cardStyles from '../../assets/styles/cards.module.css'; // Import css modules stylesheet as styles
+import textStyles from '../../assets/styles/text.module.css'; // Import css modules stylesheet as styles
 
 const EACardWhite = ({title, content}) => {
     return (
-        <Card className="card">
+        <Card className={cardStyles.card}>
         <Card.Body>
             <Card.Title>
-                <h6 className="body-text-bold">
+                <h6 className={textStyles.bodyTextBold}>
                     {title}
                 </h6>
             </Card.Title>
             <Card.Text>
-                <p className="body-text">
+                <p className={textStyles.bodyText}>
                     {content}
                 </p>
             </Card.Text>

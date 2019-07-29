@@ -36,7 +36,7 @@ class MatchCard extends Component {
         const description = this.props.description;
  
         return (
-            <Col xs={4} 
+            <Col xs={12} sm={6} lg={4} 
             className="mt-5">
                 <Animated animationInDelay={interval} animationIn="fadeInUp"> 
                     <Card className={cardStyles.card}>
@@ -51,8 +51,6 @@ class MatchCard extends Component {
                                 {experience} years experience
                             </Card.Subtitle>
                             <Card.Text className={`${textStyles.BodyText} py-2 m-0`}>
-                                <small>
-                                    Offering:
                                     <Row className="p-1 pt-4 text-center">
                                     {/* RENDERING SOCIAL ICON w/ Conditional  */}
                                     {offering.includes("Social Connection") ? 
@@ -83,7 +81,6 @@ class MatchCard extends Component {
                                         </div> 
                                     : false}
                                     </Row>
-                                </small>
                             </Card.Text>
 
                             <Card.Footer className={`${textStyles.BodyText} ${cardStyles.cardFooter}`}>

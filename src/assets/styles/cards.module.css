@@ -10,12 +10,12 @@
     border: 2px solid var(--ea-app-primary-colour-dGrey);
 }
 
-.card-footer {
+.cardFooter {
     padding: .75rem 0rem 0rem 0rem;
     background-color: var(--primary-white);
 }
 
-.card-icons {
+.cardIcons {
     color: var(--primary-blue);
     font-size: 1rem;
 }

@@ -36,8 +36,7 @@ class MatchCard extends Component {
         const description = this.props.description;
  
         return (
-            <Col xs={12} sm={6} lg={4} 
-            className="mt-5">
+            <Col xs={12} sm={6} lg={4} className="mt-5">
                 <Animated animationInDelay={interval} animationIn="fadeInUp"> 
                     <Card className={cardStyles.card}>
                         <Card.Body>

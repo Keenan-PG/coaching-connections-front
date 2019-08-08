@@ -6,7 +6,6 @@ import Title from '../text/Title';
 // buttons
 import BtnBlue from '../buttons/BtnBlue';
 import BtnBlueOutlined from '../buttons/BtnBlueOutlined';
-import Button from 'react-bootstrap/Button';
 
 // really bad practice but I have to put props in and spread them due to the way the bootstrap modal works (onHide callback) - 
 // if this is to be used, name, description and skills should be provided

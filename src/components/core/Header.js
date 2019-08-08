@@ -15,15 +15,15 @@ import {Animated} from "react-animated-css";
 
 const Header = () => {
     return (
-        <div className="p-05">
+        <div>
         <Animated animationInDelay={350} animationIn="fadeInDown" isVisible={true}>   
-            <Navbar className="navbar mb-3" id="header">   
+            <Navbar className="navbar mb-5" id="header">   
                     <Col>
                         <Navbar.Brand href="/">
                         <img
                             alt="Equality Allies"
                             src={logo}
-                            width="125"
+                            width="105"
                         />
                         </Navbar.Brand>
                     </Col>

@@ -1,10 +1,9 @@
-import React, { Component } from 'react';
+import React from 'react';
 // bootstrap
 import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
-import Collapse from 'react-bootstrap/Collapse';
 //animate
 import {Animated} from "react-animated-css";
 // icons
@@ -13,28 +12,24 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import cardStyles from '../../assets/styles/cards.module.css'; // Import css modules stylesheet as styles
 import textStyles from '../../assets/styles/text.module.css'; // Import css modules stylesheet as styles
 import buttonStyles from '../../assets/styles/buttons.module.css'; // Import css modules stylesheet as styles
+// modal
+import MatchCardModal from '../core/MatchCardModal';
 
-class MatchCard extends Component {
-    constructor(props, context) {
-        super(props,context);
-
-        this.state = {
-            open: false,
-        }
-    }
-
-    render() {
-        const { open } = this.state;
+const MatchCard = (props) => {
 
         // easy access props
-        const name = this.props.user;
+        const name = props.user;
         const fName = name.split(" ")[0];
-        const title = this.props.title;
-        const experience = this.props.experience;
-        const offering = this.props.offering;
-        const interval = this.props.space;
-        const description = this.props.description;
- 
+        const title = props.title;
+        const experience = props.experience;
+        const offering = props.offering;
+        const interval = props.space;
+        const description = props.description;
+        const skills = props.skils;
+
+        // for modal
+        const [modalShow, setModalShow] = React.useState(false);
+
         return (
             <Col xs={12} sm={6} lg={4} className="mt-5">
                 <Animated animationInDelay={interval} animationIn="fadeInUp"> 
@@ -49,7 +44,7 @@ class MatchCard extends Component {
                             <Card.Subtitle className={`${textStyles.BodyText} py-2`}>
                                 {experience} years experience
                             </Card.Subtitle>
-                            <Card.Text className={`${textStyles.BodyText} py-2 m-0`}>
+                            <div className={`${textStyles.BodyText} py-2 m-0`}>
                                     <Row className="p-1 pt-4 text-center">
                                     {/* RENDERING SOCIAL ICON w/ Conditional  */}
                                     {offering.includes("Social Connection") ? 
@@ -80,26 +75,26 @@ class MatchCard extends Component {
                                         </div> 
                                     : false}
                                     </Row>
-                            </Card.Text>
+                            </div>
 
                             <Card.Footer className={`${textStyles.BodyText} ${cardStyles.cardFooter}`}>
                                 <div className="text-right">
-                                    {/* collapse trigger */}
+                                    {/* modal trigger */}
                                     <Button
-                                        onClick={() => this.setState({ open: !open })}
-                                        aria-controls="desc-text"
-                                        aria-expanded={open}
+                                        onClick={() => setModalShow(true)}
                                         className={buttonStyles.btnMatch}>
                                         Request {fName}
                                     </Button>
-                                </div>
-                                <div>                                
-                                    <Collapse in={this.state.open}>
-                                        <div id="desc-text" className="py-2">
-                                            <div className={`${textStyles.bodyTextBold} card-subtitle h6"`}>More info</div>
-                                            <div className={textStyles.bodyText}>{description}</div>
-                                        </div>
-                                    </Collapse>
+                                </div>    
+                                <div>
+                                {/* modal */}
+                                <MatchCardModal 
+                                    show={modalShow}
+                                    onHide={() => setModalShow(false)}
+                                    name={fName}
+                                    description={description}
+                                    skills={skills}
+                                />
                                 </div>
                             </Card.Footer>
                         </Card.Body>
@@ -108,6 +103,5 @@ class MatchCard extends Component {
             </Col>
         )
     }
-}
 
 export default MatchCard;

@@ -10,6 +10,7 @@ Colours
     --secondary-dGrey: #333333;
     --btn-min-width: 195px;
     --form-min-width: 300px;
+    font-family: Graphik;
 }
 
 /* 
@@ -208,10 +209,6 @@ label {
 Header
  */
 
-.navbar {
-    background: var(--primary-white);
-}
-
 .navbar-link {
     font-family: Graphik;
     color: var(--primary-black);
@@ -229,3 +226,18 @@ Header
     color: var(--primary-black);
     text-decoration: none;
 }
+
+#header {
+    box-shadow: 0 4px 5px 0px #efefef;
+}
+
+/* 
+Footer
+ */
+ #footer {
+     background: rgba(239, 239, 239,0.5);
+ }
+
+ .footer-logo {
+     opacity: 0.5;
+ }

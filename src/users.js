@@ -5,7 +5,8 @@ export const users = [
         title: 'Web/Software Dev',
         experience: 3.5,
         offering: [ 'Social Connection', 'Advice', 'Upskilling', 'Professional Guidance' ],
-        description: 'Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.'
+        description: 'Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.',
+        skills: ['UI', 'Networking', 'Leadership', 'Public Speaking', 'Front end development']
     },
     {
         id: 2,
@@ -13,7 +14,8 @@ export const users = [
         title: 'UI Designer',
         experience: 2.1,
         offering: [ 'Social Connection', 'Upskilling' ],
-        description: 'Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.'
+        description: 'Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.',
+        skills: ['UI', 'Networking', 'Leadership', 'Public Speaking', 'Front end development']
     },
     {
         id: 3,
@@ -21,7 +23,8 @@ export const users = [
         title: 'PMO',
         experience: 7.3,
         offering: [ 'Advice', 'Upskilling' ],
-        description: 'Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.'
+        description: 'Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.',
+        skills: ['UI', 'Networking', 'Leadership', 'Public Speaking', 'Front end development']
     },    
     {
         id: 4,
@@ -29,7 +32,8 @@ export const users = [
         title: 'Web/Software Dev',
         experience: 3.5,
         offering: [ 'Social Connection', 'Upskilling', 'Professional Guidance' ],
-        description: 'Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.'
+        description: 'Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.',
+        skills: ['UI', 'Networking', 'Leadership', 'Public Speaking', 'Front end development']
     },
     {
         id: 5,
@@ -37,7 +41,8 @@ export const users = [
         title: 'UI Designer',
         experience: 2.1,
         offering: [ 'Upskilling', 'Life advice' ],
-        description: 'Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.'
+        description: 'Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.',
+        skills: ['UI', 'Networking', 'Leadership', 'Public Speaking', 'Front end development']
     },
     {
         id: 6,
@@ -45,7 +50,8 @@ export const users = [
         title: 'PMO',
         experience: 7.3,
         offering: [ 'Social Connection', 'Professional Guidance' ],
-        description: 'Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.'
+        description: 'Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.',
+        skills: ['UI', 'Networking', 'Leadership', 'Public Speaking', 'Front end development']
     },    
     {
         id: 7,
@@ -53,7 +59,8 @@ export const users = [
         title: 'Web/Software Dev',
         experience: 3.5,
         offering: [ 'Upskilling', 'Professional Guidance' ],
-        description: 'Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.'
+        description: 'Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.',
+        skills: ['UI', 'Networking', 'Leadership', 'Public Speaking', 'Front end development']
     },
     {
         id: 6,
@@ -61,7 +68,8 @@ export const users = [
         title: 'UI Designer',
         experience: 2.1,
         offering: [ 'Upskilling', 'Advice' ],
-        description: 'Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.'
+        description: 'Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.',
+        skills: ['UI', 'Networking', 'Leadership', 'Public Speaking', 'Front end development']
     },
     {
         id: 8,
@@ -69,6 +77,7 @@ export const users = [
         title: 'PMO',
         experience: 7.3,
         offering: [ 'Professional Guidance', 'Advice' ],
-        description: 'Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.'
+        description: 'Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.',
+        skills: ['UI', 'Networking', 'Leadership', 'Public Speaking', 'Front end development']
     }
 ]

@@ -20,6 +20,7 @@ import ErrorPage from './pages/404.jsx';
 // components
 import Layout from './components/core/Layout';
 import Header from './components/core/Header';
+import Footer from './components/core/Footer';
 
 // icons
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -48,6 +49,7 @@ class App extends Component {
             </Switch>
           </Router>
         </Layout>
+        <Footer/>
       </div>
     );
   }

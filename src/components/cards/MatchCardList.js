@@ -18,6 +18,7 @@ const MatchCardList = ({ users }) => {
                             experience={users[i].experience} 
                             offering={users[i].offering} 
                             description={users[i].description} 
+                            skills={users[i].skills} 
                         />
                     );
                 })
